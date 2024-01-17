@@ -5,9 +5,9 @@
 ////////////////////////////////////////////////////
 
 // Init:                                 1
-// Endpoints:                           14
+// Endpoints:                           13
 // Async Callback:                       1
-// Total number of exported functions:  16
+// Total number of exported functions:  15
 
 #![no_std]
 #![allow(internal_features)]
@@ -21,7 +21,6 @@ multiversx_sc_wasm_adapter::endpoints! {
     (
         init => init
         setGeneScienceContractAddress => set_gene_science_contract_address_endpoint
-        claim => claim
         totalSupply => total_supply
         balanceOf => balance_of
         ownerOf => owner_of
@@ -30,10 +29,10 @@ multiversx_sc_wasm_adapter::endpoints! {
         transfer_from => transfer_from
         tokensOfOwner => tokens_of_owner
         createGenZeroSlime => create_gen_zero_slime
+        catchSlime => catch_slime
         getSlimeById => get_slime_by_id_endpoint
         canBreedWith => can_breed_with
         breedWith => breed_with
-        birthFee => birth_fee
     )
 }
 
