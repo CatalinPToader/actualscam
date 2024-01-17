@@ -6,8 +6,12 @@
       <sourceFolder url="file://$MODULE_DIR$/slimy-crypto/egld-slk/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/slimy-crypto/slime-ownership/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/slimy-crypto/slime-ownership/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/slimy-crypto/slk-shop/meta/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/slimy-crypto/slk-shop/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/slimy-crypto/slk-shop/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/slimy-crypto/egld-slk/target" />
       <excludeFolder url="file://$MODULE_DIR$/slimy-crypto/slime-ownership/target" />
+      <excludeFolder url="file://$MODULE_DIR$/slimy-crypto/slk-shop/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
