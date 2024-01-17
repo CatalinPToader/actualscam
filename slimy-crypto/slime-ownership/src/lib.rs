@@ -1,3 +1,4 @@
+#![no_std]
 #![allow(clippy::suspicious_operation_groupings)]
 
 multiversx_sc::imports!();
