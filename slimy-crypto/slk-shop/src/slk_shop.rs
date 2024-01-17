@@ -23,7 +23,7 @@ pub trait SlkShop: multiversx_sc_modules::pause::PauseModule {
 
         let (token_id, payment_amount) = self.call_value().single_fungible_esdt();
         require!(token_id == self.slime_token_id().get(), "Payment must be in SLK!");
-        require!(payment_amount > CATCHER_PRICE, "Payment must be more than 5 SLK!");
+        require!(payment_amount > BigUint::from(CATCHER_PRICE), "Payment must be more than 5 SLK!");
 
         let amt = payment_amount.clone().div(BigUint::from(CATCHER_PRICE));
 
@@ -44,7 +44,7 @@ pub trait SlkShop: multiversx_sc_modules::pause::PauseModule {
 
         let (token_id, payment_amount) = self.call_value().single_fungible_esdt();
         require!(token_id == self.slime_token_id().get(), "Payment must be in SLK!");
-        require!(payment_amount > HEALTH_PRICE, "Payment must be more than 10 SLK!");
+        require!(payment_amount > BigUint::from(HEALTH_PRICE), "Payment must be more than 10 SLK!");
 
         let amt = payment_amount.clone().div(BigUint::from(HEALTH_PRICE));
 
@@ -65,7 +65,7 @@ pub trait SlkShop: multiversx_sc_modules::pause::PauseModule {
 
         let (token_id, payment_amount) = self.call_value().single_fungible_esdt();
         require!(token_id == self.slime_token_id().get(), "Payment must be in SLK!");
-        require!(payment_amount > ATK_PRICE, "Payment must be more than 10 SLK!");
+        require!(payment_amount > BigUint::from(ATK_PRICE), "Payment must be more than 10 SLK!");
 
         let amt = payment_amount.clone().div(BigUint::from(ATK_PRICE));
 
